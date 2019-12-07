@@ -2,8 +2,8 @@
   "name": "rest-client",
   "displayName": "REST Client",
   "description": "REST Client for Visual Studio Code",
-  "version": "0.23.0",
-  "publisher": "humao",
+  "version": "0.24.0",
+  "publisher": "ikbelkirasan",
   "author": {
     "name": "Huachao Mao",
     "email": "huachaomao@gmail.com"
@@ -177,6 +177,16 @@
       {
         "command": "rest-client.unfold-response",
         "title": "Unfold Response",
+        "category": "Rest Client"
+      },
+      {
+        "command": "rest-client.oauth2-get-token",
+        "title": "Get Access Token",
+        "category": "Rest Client"
+      },
+      {
+        "command": "rest-client.oauth2-refresh-token",
+        "title": "Refresh Token",
         "category": "Rest Client"
       }
     ],
@@ -598,6 +608,12 @@
           "scope": "resource",
           "description": "Enable/disable sending request CodeLens in request file"
         },
+        "rest-client.enableOAuth2CodeLens": {
+          "type": "boolean",
+          "default": true,
+          "scope": "resource",
+          "description": "Enable/disable OAuth2 CodeLens in request file"
+        },
         "rest-client.enableCustomVariableReferencesCodeLens": {
           "type": "boolean",
           "default": true,
@@ -638,6 +654,7 @@
   "dependencies": {
     "adal-node": "^0.1.26",
     "applicationinsights": "^1.0.5",
+    "axios": "^0.19.0",
     "code-highlight-linenums": "^0.2.1",
     "combined-stream": "^1.0.5",
     "dotenv": "^8.2.0",
@@ -655,6 +672,7 @@
     "mime-types": "^2.1.14",
     "moment": "^2.20.1",
     "pretty-data": "^0.40.0",
+    "puppeteer-core": "^2.0.0",
     "tmp": "^0.0.31",
     "tough-cookie": "^3.0.1",
     "tough-cookie-file-store-bugfix": "Huachao/tough-cookie-file-store-bugfix",
