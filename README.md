@@ -5,6 +5,7 @@
 REST Client allows you to send HTTP request and view the response in Visual Studio Code directly.
 
 ## Main Features
+* ⚡ **NEW: Supports OAuth2. (Documentation: Coming soon)**
 * Send/Cancel/Rerun __HTTP request__ in editor and view response in a separate pane with syntax highlight
 * Send __GraphQL query__ and author __GraphQL variables__ in editor
 * Send __cURL command__ in editor and copy HTTP request as `cURL command`
